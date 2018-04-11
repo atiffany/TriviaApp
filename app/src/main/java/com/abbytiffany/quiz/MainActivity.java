@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     public void onCheckBoxClicked(int resource) {
         CheckBox check = (CheckBox) findViewById(resource);
         boolean checked = check.isChecked();
@@ -85,9 +84,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void checkIfTextIsCorrect() {
+    public void checkIfTextIsCorrect(int resource) {
         String correctAnswer = getString(R.string.answer_3).toLowerCase();
-        EditText mEdit = (EditText)findViewById(R.id.answer_3);
+        EditText mEdit = (EditText)findViewById(resource);
         String entered = mEdit.getText().toString().toLowerCase();
         if (entered.equals(correctAnswer)) {
             updateScore();
@@ -113,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         onRadioButtonClicked(R.id.correct_answer_1);
         onCheckBoxClicked(R.id.correct_answer_2_a);
         onCheckBoxClicked(R.id.correct_answer_2_b);
-        checkIfTextIsCorrect();
+        checkIfTextIsCorrect(R.id.answer_3);
         onRadioButtonClicked(R.id.correct_answer_4);
         checkIfSpinnerIsCorrect(R.id.question_5_spinner);
 
