@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">Trivia Time</string>
+    <string name="your_score_is">Your Score Is</string>
+
+    <!-- Questions -->
+    <string name="question_1">In what year was the US Constitution written?</string>
+    <string name="question_2">Which of the Following are Red Wine Varieties?(1 point per correct answer)</string>
+    <string name="question_3">Created in 2009, what was the first decentralized cryptocurrency?</string>
+    <string name="question_4">Burkina Faso is a landlocked country located on which continent?</string>
+
+    <!-- Answers to Question 1 -->
+    <string name="answer_1_a">1787</string>
+    <string name="answer_1_b">1768</string>
+    <string name="answer_1_c">1781</string>
+    <string name="answer_1_d">1779</string>
+
+    <!--Answers to Question 2 -->
+    <string name="answer_2_a">Sangiovese</string>
+    <string name="answer_2_b">Malbec</string>
+    <string name="answer_2_c">Pinot Grigio</string>
+
+    <!--Answer to Question 3 -->
+    <string name="answer_3">Bitcoin</string>
+
+    <!--Answers to Question 4 -->
+    <string name="answer_4_a">Asia</string>
+    <string name="answer_4_b">Europe</string>
+    <string name="answer_4_c">Africa</string>
+    <string name="answer_4_d">South America</string>
 </resources>

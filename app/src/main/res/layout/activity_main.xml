@@ -17,12 +17,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginVertical="8dp">
+                android:layout_marginVertical="16dp">
                 <TextView
                     android:id="@+id/question_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="In what year was the US Constitution written?" />
+                    android:text="@string/question_1" />
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -31,19 +31,19 @@
                         android:id="@+id/correct_answer_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1787"/>
+                        android:text="@string/answer_1_a"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1768"/>
+                        android:text="@string/answer_1_b"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1780"/>
+                        android:text="@string/answer_1_c"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1791"/>
+                        android:text="@string/answer_1_d"/>
                 </RadioGroup>
             </LinearLayout>
 
@@ -51,12 +51,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginVertical="8dp">
+                android:layout_marginVertical="16dp">
                 <TextView
                     android:id="@+id/question_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Which of the Following are Red Wine Varieties?(1 point per correct answer)" />
+                    android:text="@string/question_2" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -65,16 +65,16 @@
                         android:id="@+id/correct_answer_2_a"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sangiovese"/>
+                        android:text="@string/answer_2_a"/>
                     <CheckBox
                         android:id="@+id/correct_answer_2_b"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Malbec"/>
+                        android:text="@string/answer_2_b"/>
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pinot Grigio"/>
+                        android:text="@string/answer_2_c"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -82,12 +82,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginVertical="8dp">
+                android:layout_marginVertical="16dp">
                 <TextView
                     android:id="@+id/question_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Created in 2009, what was the first decentralized cryptocurrency?" />
+                    android:text="@string/question_3" />
                 <EditText
                     android:id="@+id/answer_3"
                     android:layout_width="match_parent"
@@ -99,12 +99,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginVertical="8dp">
+                android:layout_marginVertical="16dp">
                 <TextView
                     android:id="@+id/question_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Burkina Faso is a landlocked country located on which continent?" />
+                    android:text="@string/question_4" />
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -112,20 +112,20 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Asia"/>
+                        android:text="@string/answer_4_a"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Europe"/>
+                        android:text="@string/answer_4_b"/>
                     <RadioButton
                         android:id="@+id/correct_answer_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Africa"/>
+                        android:text="@string/answer_4_c"/>
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="South America"/>
+                        android:text="@string/answer_4_d"/>
                 </RadioGroup>
             </LinearLayout>
 
