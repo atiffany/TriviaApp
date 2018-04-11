@@ -95,6 +95,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/answer_2_b"/>
                 <CheckBox
+                    android:id="@+id/answer_2_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer_2_c"/>

@@ -4,7 +4,7 @@
 
     <!-- Questions -->
     <string name="question_1">In what year was the US Constitution written?</string>
-    <string name="question_2">Which of the following are red wine varieties?(1 point per correct answer)</string>
+    <string name="question_2">Which of the following are red wine varieties?</string>
     <string name="question_3">Created in 2009, what was the first decentralized cryptocurrency?</string>
     <string name="question_4">Burkina Faso is a landlocked country located on which continent?</string>
     <string name="question_5">What is the 4th planet in our solar system?</string>
