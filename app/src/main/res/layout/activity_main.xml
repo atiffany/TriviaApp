@@ -7,16 +7,18 @@
     android:background="@color/colorDivider"
     tools:context="com.abbytiffany.quiz.MainActivity">
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:orientation="vertical"
                 android:layout_margin="8dp"
                 android:background="@color/colorPrimaryLight"
@@ -55,6 +57,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:orientation="vertical"
                 android:layout_margin="8dp"
                 android:padding="8dp"
@@ -89,6 +92,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:orientation="vertical"
                 android:layout_margin="8dp"
                 android:padding="8dp"
@@ -109,6 +113,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:orientation="vertical"
                 android:layout_margin="8dp"
                 android:padding="8dp"
@@ -143,23 +148,40 @@
                         android:text="@string/answer_4_d"/>
                 </RadioGroup>
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:background="@color/colorPrimaryLight">
+                <TextView
+                    android:id="@+id/question_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="What is the 4th planet in our solar system?" />
+                <Spinner
+                    android:id="@+id/question_5_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold"
+                    android:text="Submit To See Score"
+                    android:onClick="displayFinalScore"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/colorText"
-            android:textStyle="bold"
-            android:text="Submit To See Score"
-            android:onClick="displayFinalScore"/>
-    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

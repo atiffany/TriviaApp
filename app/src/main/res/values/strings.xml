@@ -27,4 +27,13 @@
     <string name="answer_4_b">Europe</string>
     <string name="answer_4_c">Africa</string>
     <string name="answer_4_d">South America</string>
+
+    <!--Answers to Question 5 -->
+    <string-array name="answers_5_array">
+        <item>Jupiter</item>
+        <item>Mars</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>
