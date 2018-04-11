@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         setUpOnFocusListener();
 
     }
-     // SET UP
 
+     // SET UP
     private void setUpOnFocusListener() {
         EditText text = findViewById(R.id.answer_3);
         text.setOnFocusChangeListener(new View.OnFocusChangeListener() {
