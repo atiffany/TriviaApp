@@ -28,6 +28,7 @@
                     android:textStyle="bold"
                     android:text="@string/question_1" />
                 <RadioGroup
+                    android:id="@+id/radio_group_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -119,6 +120,7 @@
                     android:textStyle="bold"
                     android:text="@string/question_4" />
                 <RadioGroup
+                    android:id="@+id/radio_group_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
