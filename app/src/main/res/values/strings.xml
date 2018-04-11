@@ -7,6 +7,7 @@
     <string name="question_2">Which of the following are red wine varieties?(1 point per correct answer)</string>
     <string name="question_3">Created in 2009, what was the first decentralized cryptocurrency?</string>
     <string name="question_4">Burkina Faso is a landlocked country located on which continent?</string>
+    <string name="question_5">What is the 4th planet in our solar system?</string>
 
     <!-- Answers to Question 1 -->
     <string name="answer_1_a">1787</string>
@@ -36,4 +37,5 @@
         <item>Venus</item>
         <item>Neptune</item>
     </string-array>
+    <string name="answer_5">Mars</string>
 </resources>
