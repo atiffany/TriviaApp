@@ -27,12 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setUpOnFocusListener();
 
     }
-    private void setUpSpinner() {
-        Spinner spinner = findViewById(R.id.question_5_spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.answers_5_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-    }
+     // SET UP
 
     private void setUpOnFocusListener() {
         EditText text = findViewById(R.id.answer_3);
@@ -45,16 +40,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     public void hideKeyboard(View view) {
         InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
+    private void setUpSpinner() {
+        Spinner spinner = findViewById(R.id.question_5_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.answers_5_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+    }
+
+
+    // UPDATE THE SCORE
     private void updateScore() {
         score++;
     }
 
+    // CHECK ANSWERS
     public boolean onMergedButtonClicked(int resource) {
         CompoundButton check = findViewById(resource);
         boolean checked = check.isChecked();
@@ -99,12 +103,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void reset(){
-        Intent intent = getIntent();
-        finish();
-        startActivity(intent);
-    }
 
+    // GAME ENDS, CHECK ANSWERS, SHOW FINAL SCORE AND LAUNCH THE RESET
     public void displayFinalScore(View view) {
         onMergedButtonClicked(R.id.correct_answer_1);
         if (onMergedButtonClicked(R.id.correct_answer_2_a) && onMergedButtonClicked(R.id.correct_answer_2_b)){
@@ -124,5 +124,12 @@ public class MainActivity extends AppCompatActivity {
                 reset();
             }
         }, 1000);
+    }
+
+    // RESET THE GAME
+    private void reset(){
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
     }
 }
